@@ -1,0 +1,305 @@
+/*
+  David Cacorovski, Jeremy Thummel, Sohail Meghani
+  January 20th, 2022
+  styles
+  This is the styles.css where we style our website.
+*/
+@import url('https://fonts.googleapis.com/css2?family=Luxurious+Roman&display=swap');
+
+html{
+  scroll-behavior: smooth;
+}
+
+#logo{
+  display: inline-block;
+  margin-left: 25%;
+  margin-right: auto;
+  width: 50%;
+  top: -15%;
+  position: absolute;
+}
+
+@keyframes slideDown{
+  from {top: -15%;}
+  to {top: 9%;}
+}
+
+#reel{
+  position: absolute;
+  margin-left: 27%;
+  margin-top: -3%;
+  width: 45%;
+  height: auto;
+}
+
+p{
+  z-index: -2;
+  padding-top: 10px;
+  padding-right: 15px;
+  padding-left: 15px;
+  padding-bottom: 15px;
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  position: relative;
+  text-align: center;
+  width: 60%;
+  left: 20%;
+  font-family: 'Luxurious Roman';
+  font-size: 40px;
+  text-shadow: -0px -0px 0 #000, 0px -0px 0 #000, -0px 0px 0 #000, 2px 2px 0 #000;
+}
+
+#phototext{
+  z-index: -2;
+  padding-top: 5px;
+  padding-right: 10px;
+  padding-left: 10px;
+  padding-bottom: 10px;
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  position: relative;
+  text-align: center;
+  width: 75%;
+  left: 12.5%;
+  font-family: 'Luxurious Roman';
+  font-size: 25px;
+  text-shadow: -0px -0px 0 #000, 0px -0px 0 #000, -0px 0px 0 #000, 2px 2px 0 #000;
+}
+
+h2, h3{
+  z-index: -2;
+  padding-top: 5px;
+  padding-right: 10px;
+  padding-left: 10px;
+  padding-bottom: 10px;
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  position: relative;
+  text-align: center;
+  width: 60%;
+  left: 20%;
+  font-family: 'Luxurious Roman';
+  font-size: 65px;
+  text-shadow: -0px -0px 0 #000, 0px -0px 0 #000, -0px 0px 0 #000, 2px 2px 0 #000;
+}
+
+body{
+  background-image: url('images/islandBackground.png');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+}
+
+/*Code taken from https://www.w3schools.com/howto/howto_js_sidenav.asp || Edited by Jeremy and Sohail*/
+/* The side navigation menu */
+.sidenav {
+  height: 100%; /* 100% Full-height */
+  width: 0; /* 0 width - change this with JavaScript */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Stay on top */
+  top: 0; /* Stay at the top */
+  left: 0;
+  background-color: rgba(135, 206, 235, 0.4); /* Black*/
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 60px; /* Place content 60px from the top */
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+}
+
+/* The navigation menu links */
+.sidenav a {
+  font-family: 'Lato', sans-serif;
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: black;
+  text-align: center;
+  margin-left: -1.5%;
+  font-weight: bolder;
+  display: block;
+  transition: 0.3s;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+  position: absolute;
+  top: 1px;
+  left:-11.5px;
+  font-size: 36px;
+  float: left;
+}
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+  transition: margin-left .5s;
+  padding: 20px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+#menuImg{
+  width: 2%; 
+  height: auto;
+  display: inline-block; 
+  background-color: rgba(0, 0, 0, 0.4); 
+  filter: inverse(1);
+	transition-duration: 1s;
+  transition-property: transform;
+  position: fixed;
+}
+#menuImg:hover{
+	transform: rotate(360deg);
+}
+
+.helpImage{
+  width: 50%;
+  margin-left: 25%;
+  border: 1px solid black;
+  border-radius: 2%;
+}
+
+@keyframes embiggen{
+  from {width: 50%; margin-left: 25%;}
+  to {width: 75%; margin-left: 12.5%}
+}
+
+@keyframes embiggenMap{
+  from {width: 30%; margin-left: 32.5%;}
+  to {width: 65%; margin-left: 17.5%}
+}
+
+
+.helpImage:hover{
+  animation: embiggen 1s ease;
+  width: 75%;
+  margin-left: 12.5%;
+}
+/*Code Taken from https://www.w3schools.com/howto/howto_js_slideshow.asp || Modified by Sohail*/
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides1 {
+  display: none;
+}
+
+.mySlides2 {
+  display: none;
+}
+
+.mySlides3 {
+  display: none;
+}
+
+.mySlides4 {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+#map{
+  width: 35%;
+  margin-left: 32.5%;
+}
+
+#map:hover{
+  animation: embiggenMap 1s ease;
+  width: 65%;
+  margin-left: 17.5%;
+}

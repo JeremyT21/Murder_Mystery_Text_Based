@@ -1,0 +1,206 @@
+<!--
+  David Cacorovski, Jeremy Thummel, Sohail Meghani
+  January 20th, 2022
+  ICS4U Summative Changes Webpage
+  This is the changes page for the final project of the semester
+-->
+ <html>
+  <head>
+    <link rel="stylesheet" href="../styles.css"></link>
+    <title>Palm Treechery - Changes</title>
+    <link rel="icon" href="../images/favicon.png">
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <script>
+      $(document).ready(function(){
+        $("#logo").css({"animation": "slideDown ease 3s", "top": "9%"});
+      });
+    </script>
+    <script>
+      /* Set the width of the side navigation to 250px and the left margin of the page content to 250px and add a black background color to body */
+      function openNav() {
+        document.getElementById("mySidenav").style.width = "250px";
+        document.getElementById("main").style.marginLeft = "250px";
+        document.body.style.backgroundColor = "rgba(135, 206, 235, 0.4)";
+      }
+      
+      /* Set the width of the side navigation to 0 and the left margin of the page content to 0,      and the background color of body to white */
+      function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+        document.getElementById("main").style.marginLeft = "0";
+        document.body.style.backgroundColor = "white";
+      }
+
+      var slideIndex = [1,1,1,1];
+      /* Class the members of each slideshow group with different CSS classes */
+      var slideId = ["mySlides1", "mySlides2", "mySlides3", "mySlides4"];
+      showSlides(1, 0);
+      showSlides(1, 1);
+      //showSlides(1, 2);
+      
+      function plusSlides(n, no) {
+        showSlides(slideIndex[no] += n, no);
+      }
+      
+      function showSlides(n, no) {
+        var i;
+        var x = document.getElementsByClassName(slideId[no]);
+        if (n > x.length) slideIndex[no] = 1;
+        if (n < 1) slideIndex[no] = x.length;
+        for (i = 0; i < x.length; i++) {
+          x[i].style.display = "none";
+        }
+        x[slideIndex[no]-1].style.display = "block";
+      }
+    </script>
+  </head>
+  <body>
+    <div id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <a href="../index.html" id="exempt">Home</a>
+      <a href="../files/planner.docx" id="exempt">Project Description and Specifications</a>
+      <a href="../images/ICS4U_classMap.png" id="exempt">Class Map</a>
+      <a href="help.html" id="exempt">Help</a>
+      <a href="help.html#OOPheader" id="exempt">OOP Integration</a>
+      <a href="" id="exempt">Changes</a>
+      <a href="../code.txt" id="exempt">All Code</a>
+      <br>
+      <br>
+      <br>
+      <br>
+      <a href="https://replit.com/@JeremyThummel/summativeGame?v=1" id="exempt" target="_blank">Play</a>
+    </div>
+    <img src="../images/bars.png" onclick="openNav()" id="menuImg"></img>
+    <div id="main">
+      <img src="../images/logo.png" id="logo"></img>
+      <p>
+        <br>
+        <br>
+        <br>
+        <br>
+        Welcome to the Palm Treechery Changelog!
+        <br>
+        <br>
+        On this page, you will find comparisons between our original plan for this game and how it differs from the final product.
+      </p>
+      <!-- Code Taken from https://www.w3schools.com/howto/howto_js_slideshow.asp || Modified by Sohail -->
+      <!--Beginning of Comparisons Section-->
+      <h2 style="width: 75%; left: 12.5%">Comparisons</h2>
+      <h3 style="font-size: 48px; width: 50%; left: 25%">Class - Main</h3>
+      <!-- Slideshow container -->
+      <div class="slideshow-container">  
+        <!-- Full-width images with number and caption text -->
+        <div class="mySlides1 fade">
+          <img src="screenshots/main.png" id="map">
+        </div>
+      
+        <div class="mySlides1 fade">
+          <img src="screenshots/mainClass.png" style="width:100%">
+        </div>
+
+        <!-- Next and previous buttons -->
+        <a class="prev" onclick="plusSlides(-1, 0)" style="background-color: rgba(0, 0, 0, 0.2);">&#10094;</a>
+        <a class="next" onclick="plusSlides(1, 0)" style="background-color: rgba(0, 0, 0, 0.2);">&#10095;</a>
+      </div>
+      <br>
+      <br>
+      <p style="font-size: 24px">
+        The above slideshow showcases the Main class from our game, as well as the plan that we had for our Main class in the Class Map milestone we had handed in previously. The plan for the Main class didn't differ too much when it was implemented into our code. The main thing that was changed from the original plan was that the wildCat reference was not implemented. This was not in our final code as we tweaked our plan slightly (no spoilers here!) to the point where the reference became obsolete. We decided to make the wildCat reference obsolete as it would have been more code for us to write, and it would not have been as efficient as it could have easily been amalgamated into other elements of the game.
+      </p>
+
+      <h3 style="font-size: 48px; width: 50%; left: 25%">Class - analyzeClues</h3>
+      <img src="screenshots/analyzeClues.png" alt="analyzeClues Class" class="helpImage">
+      <p style="font-size: 24px">
+        This image showcases the analyzeClues class from our game. The reason that there is no Class Map image for this particular class is because we did not anticipate to add this class initially. We had originally planned that all of the clue sections would be handled directly within the Main class, however, in an effort to make the code more efficient and simpler, we put into this class instead. The purpose of this class is to handle all 3 of the clue inspection areas within this game. We assign the actual clues themselves within the Main class and then reference those assignments in Main and print out the according and appropriate message, depending on the clue they are analyzing and which stage they are analyzing it in.
+      </p>
+
+      <!-- Code Taken from https://www.w3schools.com/howto/howto_js_slideshow.asp || Modified by Sohail -->
+      <!--Beginning of Comparisons Section-->
+      <h3 style="font-size: 48px; width: 50%; left: 25%">Class - characterManager</h3>
+      <!-- Slideshow container -->
+      <div class="slideshow-container">  
+        <!-- Full-width images with number and caption text -->
+        <div class="mySlides2 fade">
+          <img src="screenshots/characterManager.png" id="map">
+        </div>
+      
+        <div class="mySlides2 fade">
+          <img src="screenshots/characterManagerClass.png" style="width:100%">
+        </div>
+
+        <!-- Next and previous buttons -->
+        <a class="prev" onclick="plusSlides(-1, 1)" style="background-color: rgba(0, 0, 0, 0.2);">&#10094;</a>
+        <a class="next" onclick="plusSlides(1, 1)" style="background-color: rgba(0, 0, 0, 0.2);">&#10095;</a>
+      </div>
+      <br>
+      <br>
+      <p style="font-size: 24px">
+        These images showcase the original plan that we had for the characterManager class compared to the final product present in our game. Most of the code in this class was changed, simply because of the fact that we decided to scrap some features that we deemed not useful to the overall story. Firstly, we changed some of the initial variables that we had declared have changed slightly. The boolean <em>life</em> was renamed to <em>alive</em>. Integer <em>age</em>, boolean <em>drankRed</em> and final String <em>textBox</em> were all removed as they were deemed unnecessary. Instead, we implemented String <em>speech</em> (used to assign what a character will say during a specific scene), char <em>indexLetter</em>, int <em>index</em> (both used to keep track of the place that the cursor is within the String) and String[] <em>characterNames</em> (array of names for each character that is printed out before each character speaks).
+      </p>
+
+      <!-- Code Taken from https://www.w3schools.com/howto/howto_js_slideshow.asp || Modified by Sohail -->
+      <!--Beginning of Comparisons Section-->
+      <h3 style="font-size: 48px; width: 50%; left: 25%">Class - trialEvent</h3>
+      <!-- Slideshow container -->
+      <div class="slideshow-container">  
+        <!-- Full-width images with number and caption text -->
+        <div class="mySlides3 fade">
+          <img src="screenshots/trialEventMap.png" id="map">
+        </div>
+      
+        <div class="mySlides3 fade">
+          <img src="screenshots/trialEvent.png" style="width:100%">
+        </div>
+
+        <!-- Next and previous buttons -->
+        <a class="prev" onclick="plusSlides(-1, 2)" style="background-color: rgba(0, 0, 0, 0.2);">&#10094;</a>
+        <a class="next" onclick="plusSlides(1, 2)" style="background-color: rgba(0, 0, 0, 0.2);">&#10095;</a>
+      </div>
+      <br>
+      <br>
+      <p style="font-size: 24px">
+        These images showcase the original plan that we had for the characterManager class compared to the final product present in our game. Most of the code in this class was changed, simply because of the fact that we decided to scrap some features that we deemed not useful to the overall story. Firstly, we changed some of the initial variables that we had declared have changed slightly. The boolean <em>life</em> was renamed to <em>alive</em>. Integer <em>age</em>, boolean <em>drankRed</em> and final String <em>textBox</em> were all removed as they were deemed unnecessary. Instead, we implemented String <em>speech</em> (used to assign what a character will say during a specific scene), char <em>indexLetter</em>, int <em>index</em> (both used to keep track of the place that the cursor is within the String) and String[] <em>characterNames</em> (array of names for each character that is printed out before each character speaks).
+      </p>
+
+      <!-- Code Taken from https://www.w3schools.com/howto/howto_js_slideshow.asp || Modified by Sohail -->
+      <!--Beginning of Comparisons Section-->
+      <h3 style="font-size: 48px; width: 50%; left: 25%">Class - Child Classes</h3>
+      <!-- Slideshow container -->
+      <div class="slideshow-container">  
+        <!-- Full-width images with number and caption text -->
+        <div class="mySlides4 fade">
+          <img src="screenshots/childClassMaps.png" id="map">
+        </div>
+      
+        <div class="mySlides4 fade">
+          <img src="screenshots/matilda.png" style="width:100%">
+        </div>
+
+        <div class="mySlides4 fade">
+          <img src="screenshots/boulderBrian.png" style="width:100%">
+        </div>
+
+        <div class="mySlides4 fade">
+          <img src="screenshots/lemonBlemon.png" style="width:100%">
+        </div>
+
+        <div class="mySlides4 fade">
+          <img src="screenshots/hotelManager.png" style="width:100%">
+        </div>
+
+        <div class="mySlides4 fade">
+          <img src="screenshots/redDrink.png" style="width:100%">
+        </div>
+
+        <!-- Next and previous buttons -->
+        <a class="prev" onclick="plusSlides(-1, 3)" style="background-color: rgba(0, 0, 0, 0.2);">&#10094;</a>
+        <a class="next" onclick="plusSlides(1, 3)" style="background-color: rgba(0, 0, 0, 0.2);">&#10095;</a>
+      </div>
+      <br>
+      <br>
+      <p style="font-size: 24px">
+        This final slideshow showcases all of the child classes in our game for each of the characters that we have in the game. The code for each of the classes remains relatively the same throughout the building of the code. The only thing that we decided to change for the Matilda class was that we got rid of the Intensity and angryUp code since it was deemed useless to the overall plot of the story. Furthermore, for redDrink, we got rid of the drink method as it did not contribute to the overall story and since we tweaked the character of Red Drink significantly between these two processes, leaving no point to the drink() method. Finally, for each child class, we incorporated the speak() method into their specific class, allowing for the proper methods to be called within the appropriate class.
+      </p>
+    <div>
+  </body>
+</html>

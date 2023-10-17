@@ -1,0 +1,1838 @@
+/******** START OF INDEX.HTML ********************/
+<!--
+  David Cacorovski, Jeremy Thummel, Sohail Meghani
+  January 20th, 2022
+  ICS4U Summative Webpage
+  This is the webpage for the final project of the semester
+-->
+ <html>
+  <head>
+    <link rel="stylesheet" href="styles.css"></link>
+    <title>Palm Treechery</title>
+    <link rel="icon" href="images/favicon.png">
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <!-- Just a animation for the logo -->
+    <script>
+      $(document).ready(function(){
+        $("#logo").css({"animation": "slideDown ease 3s", "top": "9%"});
+      });
+    </script>
+    <script>
+      /* Set the width of the side navigation to 250px and the left margin of the page content to 250px and add a black background color to body */
+      function openNav() {
+        document.getElementById("mySidenav").style.width = "250px";
+        document.getElementById("main").style.marginLeft = "250px";
+        document.body.style.backgroundColor = "rgba(135, 206, 235, 0.4)";
+      }
+      
+      /* Set the width of the side navigation to 0 and the left margin of the page content to 0,      and the background color of body to white */
+      function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+        document.getElementById("main").style.marginLeft = "0";
+        document.body.style.backgroundColor = "white";
+      }
+    </script>
+  </head>
+  <body>
+    <!-- Links -->
+    <div id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <a href="" id="exempt">Home</a>
+      <a href="files/planner.docx" id="exempt">Project Description and Specifications</a>
+      <a href="images/ICS4U_classMap.png" id="exempt">Class Map</a>
+      <a href="webpages/help.html" id="exempt">Help</a>
+      <a href="webpages/help.html#OOPheader" id="exempt">OOP Integration</a>
+      <a href="webpages/change.html" id="exempt">Changes</a>
+      <a href="" id="exempt">All Code</a>
+      <br>
+      <br>
+      <br>
+      <br>
+      <a href="https://replit.com/@JeremyThummel/summativeGame?v=1" id="exempt" target="_blank">Play</a>
+    </div>
+    <iframe src="bgm.mp3" allow="autoplay" loop="true" style="display:none" id="iframeAudio"></iframe>
+    <img src="images/bars.png" onclick="openNav()" id="menuImg"></img>
+    <div id="main">
+      <img src="images/logo.png" id="logo"></img>
+      <p>
+        <br>
+        <br>
+        <br>
+        Welcome to the official Palm Treechery website!
+        <br>
+        <br>
+        On this website, you'll find information on how to play Palm Treechery and insights into our code.
+      </p>
+
+      <img id="reel" src="images/characterReel.gif" style="z-index: -1;"></img>
+      <p id="phototext">
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        Above are some of the friendly, or not so friendly, faces you'll meet during your stay on Palm Tree Island!
+      </p>
+
+
+  </body>
+</html>
+/*********** END OF INDEX.HTML *******************/
+/*************** START OF HELP.HTML *******************/
+<!--
+  David Cacorovski, Jeremy Thummel, Sohail Meghani
+  January 20th, 2022
+  ICS4U Summative Help Webpage
+  This is the help page for the final project of the semester
+-->
+ <html>
+  <head>
+    <link rel="stylesheet" href="../styles.css"></link>
+    <title>Palm Treechery - Help</title>
+    <link rel="icon" href="../images/favicon.png">
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script>
+      $(document).ready(function(){
+        $("#logo").css({"animation": "slideDown ease 3s", "top": "9%"});
+      });
+    </script>
+    <script>
+      /* Set the width of the side navigation to 250px and the left margin of the page content to 250px and add a black background color to body */
+      function openNav() {
+        document.getElementById("mySidenav").style.width = "250px";
+        document.getElementById("main").style.marginLeft = "250px";
+        document.body.style.backgroundColor = "rgba(135, 206, 235, 0.4)";
+      }
+      
+      /* Set the width of the side navigation to 0 and the left margin of the page content to 0,      and the background color of body to white */
+      function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+        document.getElementById("main").style.marginLeft = "0";
+        document.body.style.backgroundColor = "white";
+      }
+    </script>
+  </head>
+  <body>
+    <div id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <a href="../index.html" id="exempt">Home</a>
+      <a href="../files/planner.docx" id="exempt">Project Description and Specifications</a>
+      <a href="../images/ICS4U_classMap.png" id="exempt">Class Map</a>
+      <a href="" id="exempt">Help</a>
+      <a href="#OOPheader" id="exempt">OOP Integration</a>
+      <a href="change.html" id="exempt">Changes</a>
+      <a href="" id="exempt">All Code</a>
+      <br>
+      <br>
+      <br>
+      <br>
+      <a href="https://replit.com/@JeremyThummel/summativeGame?v=1" id="exempt" target="_blank">Play</a>
+    </div>
+    <iframe src="bgm.mp3" allow="autoplay" loop="true" style="display:none" id="iframeAudio"></iframe>
+    <img src="../images/bars.png" onclick="openNav()" id="menuImg"></img>
+    <div id="main">
+      <img src="../images/logo.png" id="logo"></img>
+      <p>
+        <br>
+        <br>
+        <br>
+        Welcome to the Palm Treechery Help Page!
+        <br>
+        <br>
+        On this page, you will find information on how the game is played and how it has been coded using our skills in Java.
+      </p>
+      <!--Beginning of How to Play Section-->
+      <h2 style="width: 75%; left: 12.5%">How to Play</h2>
+      <p style="font-size: 24px">
+        The premise of this game is that you, the player, are stuck on an island where a volcano is about to erupt. However, there has been a murder on the island. By joining forces with the other 4 people on the island, you must inspect various locations across the island and weed out the murderer so that you and the rest of the survivors can escape successfully. Will you be able to find the killer and escape successfully? Or will you be left behind on the island, left to perish?...
+        <br>
+        <br>
+        <br>
+        <span>Controls</span>
+        <br>
+        <br>
+        Keyboard - Used to provide input to the game to progress the story and to play the game itself
+        <br>
+        Mouse - Used to scroll up in the console in order to view previous encounters and dialogue
+      </p>
+      <h3 style="font-size: 48px; width: 50%; left: 25%">Screenshots</h3>
+      <img src="screenshots/introduction.png" alt="Introduction and Start of Game" class="helpImage">
+      <p style="font-size: 24px">
+        As soon as you click RUN to start the game, you are thrust into the world of Palm Treechery. You are welcomed to Palm Island and are asked to input your name into the console. Use your keyboard to enter your name. As soon as it is entered into the console and submitted, you are immediately put into the story of Palm Treechery and are immersed in the beautiful world of this text-based adventure.
+      </p>
+
+      <img src="screenshots/literalText.png" alt="Variations of Text" class="helpImage">
+      <p style="font-size: 24px">
+        This image shows the different variations of text present within this game. The white text represents lines spoken by the character in question. In this case, that would be Red Drink. The green text showcases sentences that are spoken by the Narrator of the game. These lines do not directly impact the game in itself. Finally, the blue text represents lines in the game that are not spoken directly by the characters, however, it is spoken by objects around them. In this case, the lines in blue are spoken by someone on the TV.
+      </p>
+
+      <img src="screenshots/inspection.png" alt="Inspection Areas" class="helpImage">
+      <p style="font-size: 24px">
+        This screenshot shows one of three clue inspection areas present within this game. It is through these areas that you are able to inspect the setting of the game for clues to help you to narrow down the list of suspects. In this scene, you are given the option to inspect three things. The Hotel Manager's body, the red liquid on the floor or the scratches on the meat in the meat locker. Which of these leads to the murderer? It is up to you to find out...
+      </p>
+
+      <img src="screenshots/trial.png" alt="Trial to Find the Murderer" class="helpImage">
+      <p style="font-size: 24px">
+        After all three areas have been thoroughly inspected, the trial process will begin. All survivors will come together to finally root out the killer. However, you are the one required to determine who the murderer is. If you successfully root them out, a second trial will ensue to finally bring the murderer to justice by leaving them on the island while the rest of the people on the island will escape. Keep in mind, if you choose the wrong person and convict them as the murderer, you will be killed by the murderer and they will escape on the private jet.
+      </p>
+        
+      <h2 style="width: 75%; left: 12.5%" id="OOPheader">OOP Integration</h2>
+      <p style="font-size: 24px">
+        In this section, we will cover how the various aspects of Object Oriented Programming (OOP) in Java has been applied to our game. Through our learnings in Java, we have learned many concepts such as polymorphism, encapsulation and inheritance and were asked to apply those learnings to this final project.
+      </p>
+
+      <img src="screenshots/encapsulation.png" alt="Encapsultion - Protected" class="helpImage">
+      <p style="font-size: 24px">
+        This is an example of encapsulation that we have adapted into our code. Here, we have a protected array of Strings as well as a protected boolean <em>alive</em>. This access modifier prevents other classes other than child classes from accessing the variable and changing it.
+      </p>
+
+      <img src="screenshots/inheritance.png" alt="Inheritance - Matilda Character" class="helpImage">
+      <p style="font-size: 24px">
+        This child class, as well as all of the other character child classes, inherit the <em>characterManager</em>. This allows for the variables and the methods in the parent class to be accessed by the child class, as well as any other classes, all depending on the access modifier that the specific variable or object has.
+      </p>  
+
+      <img src="screenshots/polymorph.png" alt="Polymorphism - Dot Notation" class="helpImage">
+      <p style="font-size: 24px">
+        Within the Main class of our game, we have various instances of the Polymorphism "dot notation" present within our game. In this screenshot, it is used by the matilda and boulderBrian objects to access the speech and the speak methods.
+      </p>  
+
+      <img src="screenshots/staticAndInstance.png" alt="Static Class Members, Instance Variables, Access Modifiers" class="helpImage">
+      <p style="font-size: 24px">
+        Here, you can see both static class members as well as instance variables. Since there is only one copy of that member that is created and is used by all objects within that class as well as any other classes that can access it, these objects can be used as static class members. Furthermore, although it is not visible within this screenshot, each one of these objects is created outside of any blocks, methods or constructors, thus causing them to be instance variables. Finally, each one of these objects has the <em>public</em> access modifier, allowing it to be accessed by any class within the project. Throughout our code as well as throughout other screenshots, two other access modifiers are visible. The <em>protected</em> access modifier is given to objects that do not wish for other classes to access it. However, children of this class would be able to access this object. Think of it like a middle ground between <em>public</em> and <em>private</em>. The <em>private</em> access modifier is given to objects that do not need to be accessed by any other class outside of the one it is in. Similar to the <em>protected</em> access modifier, it can still be accessed. However, it can only be accessed by other objects or methods that happen to be in the same class.
+      </p>  
+
+      <img src="screenshots/constantImmute.png" alt="Constants and Immutable Objects" class="helpImage">
+      <p style="font-size: 24px">
+        There are two things related to OOP present within this screenshot. Firstly, the keyword <em>final</em> is present in this class, as well as any other character/child classes within our code. This is applied to represent that the name of each of the characters is a constant variable and it cannot be changed. The other thing that is present here is immutable objects. The word immutable means that the object in question cannot be altered once it has been instantiated.
+      </p>  
+
+      <img src="screenshots/functions.png" alt="Overriden Functions" class="helpImage">
+      <p style="font-size: 24px">
+        Within all of the child/character classes in our code, there are two versions of the speak() function present. The first one is present so that the dialgoue that was assigned within the Main class can be sent to the console along with the appropriate name that is asssociated with that character and class. At the end, after everything has been printing, a line break is printed to give space to the next line that is printed to the console. The second function is a method with a parameter, allowing us to check within the code if the character within question is either dead or alive. If this function is called and the parameter has been set to false, the line that was assigned to that particular character in that scenario will not be outputted to the console.
+      </p>  
+
+      <img src="screenshots/abstract.png" alt="Abstract Class and Method" class="helpImage">
+      <p style="font-size: 24px">
+        Finally, the last thing that we adapted from our learnings of OOP during this semester is abstract classes. This class allows each of its children (ie. the character classes) to access its functions. This is particularly useful as abstract classes cannot be instantiated, meaning that new instances of the class cannot be created, thus allowing it to act as the perfect parent to each of the children classes that inherit it. Finally, the abstract method <em>speak()</em> is created in this class. The purpose of this function, as stated in the previous paragraph, is to allow characters to say certain sentences depending on the situation that they are in and output it to the console. There is no implementation required for these methods, however, you must make sure that when you are inhertiting or extending this class, you must use this method inside of it, otherwise the code will not work.
+      </p>  
+    <div>
+  </body>
+</html>
+/*************************** END OF HELP.HTML *****************/
+/**************************** START OF CHANGE.HTML *********************/
+<!--
+  David Cacorovski, Jeremy Thummel, Sohail Meghani
+  January 20th, 2022
+  ICS4U Summative Changes Webpage
+  This is the changes page for the final project of the semester
+-->
+ <html>
+  <head>
+    <link rel="stylesheet" href="../styles.css"></link>
+    <title>Palm Treechery - Changes</title>
+    <link rel="icon" href="../images/favicon.png">
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <script>
+      $(document).ready(function(){
+        $("#logo").css({"animation": "slideDown ease 3s", "top": "9%"});
+      });
+    </script>
+    <script>
+      /* Set the width of the side navigation to 250px and the left margin of the page content to 250px and add a black background color to body */
+      function openNav() {
+        document.getElementById("mySidenav").style.width = "250px";
+        document.getElementById("main").style.marginLeft = "250px";
+        document.body.style.backgroundColor = "rgba(135, 206, 235, 0.4)";
+      }
+      
+      /* Set the width of the side navigation to 0 and the left margin of the page content to 0,      and the background color of body to white */
+      function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+        document.getElementById("main").style.marginLeft = "0";
+        document.body.style.backgroundColor = "white";
+      }
+
+      var slideIndex = [1,1,1,1];
+      /* Class the members of each slideshow group with different CSS classes */
+      var slideId = ["mySlides1", "mySlides2", "mySlides3", "mySlides4"];
+      showSlides(1, 0);
+      showSlides(1, 1);
+      //showSlides(1, 2);
+      
+      function plusSlides(n, no) {
+        showSlides(slideIndex[no] += n, no);
+      }
+      
+      function showSlides(n, no) {
+        var i;
+        var x = document.getElementsByClassName(slideId[no]);
+        if (n > x.length) slideIndex[no] = 1;
+        if (n < 1) slideIndex[no] = x.length;
+        for (i = 0; i < x.length; i++) {
+          x[i].style.display = "none";
+        }
+        x[slideIndex[no]-1].style.display = "block";
+      }
+    </script>
+  </head>
+  <body>
+    <div id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <a href="../index.html" id="exempt">Home</a>
+      <a href="../files/planner.docx" id="exempt">Project Description and Specifications</a>
+      <a href="../images/ICS4U_classMap.png" id="exempt">Class Map</a>
+      <a href="help.html" id="exempt">Help</a>
+      <a href="help.html#OOPheader" id="exempt">OOP Integration</a>
+      <a href="" id="exempt">Changes</a>
+      <a href="" id="exempt">All Code</a>
+      <br>
+      <br>
+      <br>
+      <br>
+      <a href="https://replit.com/@JeremyThummel/summativeGame?v=1" id="exempt" target="_blank">Play</a>
+    </div>
+    <img src="../images/bars.png" onclick="openNav()" id="menuImg"></img>
+    <div id="main">
+      <img src="../images/logo.png" id="logo"></img>
+      <p>
+        <br>
+        <br>
+        <br>
+        Welcome to the Palm Treechery Changelog!
+        <br>
+        <br>
+        On this page, you will find comparisons between our original plan for this game and how it differs from the final product.
+      </p>
+      <!-- Code Taken from https://www.w3schools.com/howto/howto_js_slideshow.asp || Modified by Sohail -->
+      <!--Beginning of Comparisons Section-->
+      <h2 style="width: 75%; left: 12.5%">Comparisons</h2>
+      <h3 style="font-size: 48px; width: 50%; left: 25%">Class - Main</h3>
+      <!-- Slideshow container -->
+      <div class="slideshow-container">  
+        <!-- Full-width images with number and caption text -->
+        <div class="mySlides1 fade">
+          <img src="screenshots/main.png" id="map">
+        </div>
+      
+        <div class="mySlides1 fade">
+          <img src="screenshots/mainClass.png" style="width:100%">
+        </div>
+
+        <!-- Next and previous buttons -->
+        <a class="prev" onclick="plusSlides(-1, 0)" style="background-color: rgba(0, 0, 0, 0.2);">&#10094;</a>
+        <a class="next" onclick="plusSlides(1, 0)" style="background-color: rgba(0, 0, 0, 0.2);">&#10095;</a>
+      </div>
+      <br>
+      <br>
+      <p style="font-size: 24px">
+        The above slideshow showcases the Main class from our game as well as the plan that we had for our Main class in the Class Map milestone we had handed in previously. The plan for the Main class didn't differ too much when it was implemented into our code. The main thing that was changed from the original plan was that the wildCat reference was not implemented. This was not in our final code as we tweaked our plan slightly (no spoilers here!) to the point where the reference became obsolete. We decided to make the wildCat reference obsolete as it would have been more code for us to write and it would not have been as efficient as it could have easily been amalgamated into other elements of the game.
+      </p>
+
+      <h3 style="font-size: 48px; width: 50%; left: 25%">Class - analyzeClues</h3>
+      <img src="screenshots/analyzeClues.png" alt="analyzeClues Class" class="helpImage">
+      <p style="font-size: 24px">
+        This image showcases the analyzeClues class from our game. The reason that there is no Class Map image for this particular class is because we did not anticipate to add this class initially. We had originally planned that all of the clue sections would be handled directly within the Main class, however, in an effort to make the code more efficient and simpler, we put into this class instead. The purpose of this class is to handle all 3 of the clue inspection areas within this game. We assign the actual clues themselves within the Main class and then reference those assignments in Main and print out the according and appropriate message, depending on the clue they are analyzing and which stage they are analyzing it in.
+      </p>
+
+      <!-- Code Taken from https://www.w3schools.com/howto/howto_js_slideshow.asp || Modified by Sohail -->
+      <!--Beginning of Comparisons Section-->
+      <h3 style="font-size: 48px; width: 50%; left: 25%">Class - characterManager</h3>
+      <!-- Slideshow container -->
+      <div class="slideshow-container">  
+        <!-- Full-width images with number and caption text -->
+        <div class="mySlides2 fade">
+          <img src="screenshots/characterManager.png" id="map">
+        </div>
+      
+        <div class="mySlides2 fade">
+          <img src="screenshots/characterManagerClass.png" style="width:100%">
+        </div>
+
+        <!-- Next and previous buttons -->
+        <a class="prev" onclick="plusSlides(-1, 1)" style="background-color: rgba(0, 0, 0, 0.2);">&#10094;</a>
+        <a class="next" onclick="plusSlides(1, 1)" style="background-color: rgba(0, 0, 0, 0.2);">&#10095;</a>
+      </div>
+      <br>
+      <br>
+      <p style="font-size: 24px">
+        These images showcase the original plan that we had for the characterManager class compared to the final product present in our game. Most of the code in this class was changed, simply because of the fact that we decided to scrap some features that we deemed not useful to the overall story. Firstly, we changed some of the initial variables that we had declared have changed slightly. The boolean <em>life</em> was renamed to <em>alive</em>. Integer <em>age</em>, boolean <em>drankRed</em> and final String <em>textBox</em> were all removed as they were deemed unnecessary. Instead, we implemented String <em>speech</em> (used to assign what a character will say during a specific scene), char <em>indexLetter</em>, int <em>index</em> (both used to keep track of the place that the cursor is within the String) and String[] <em>characterNames</em> (array of names for each character that is printed out before each character speaks).
+      </p>
+
+      <!-- Code Taken from https://www.w3schools.com/howto/howto_js_slideshow.asp || Modified by Sohail -->
+      <!--Beginning of Comparisons Section-->
+      <h3 style="font-size: 48px; width: 50%; left: 25%">Class - trialEvent</h3>
+      <!-- Slideshow container -->
+      <div class="slideshow-container">  
+        <!-- Full-width images with number and caption text -->
+        <div class="mySlides3 fade">
+          <img src="screenshots/trialEventMap.png" id="map">
+        </div>
+      
+        <div class="mySlides3 fade">
+          <img src="screenshots/trialEvent.png" style="width:100%">
+        </div>
+
+        <!-- Next and previous buttons -->
+        <a class="prev" onclick="plusSlides(-1, 2)" style="background-color: rgba(0, 0, 0, 0.2);">&#10094;</a>
+        <a class="next" onclick="plusSlides(1, 2)" style="background-color: rgba(0, 0, 0, 0.2);">&#10095;</a>
+      </div>
+      <br>
+      <br>
+      <p style="font-size: 24px">
+        These images showcase the original plan that we had for the characterManager class compared to the final product present in our game. Most of the code in this class was changed, simply because of the fact that we decided to scrap some features that we deemed not useful to the overall story. Firstly, we changed some of the initial variables that we had declared have changed slightly. The boolean <em>life</em> was renamed to <em>alive</em>. Integer <em>age</em>, boolean <em>drankRed</em> and final String <em>textBox</em> were all removed as they were deemed unnecessary. Instead, we implemented String <em>speech</em> (used to assign what a character will say during a specific scene), char <em>indexLetter</em>, int <em>index</em> (both used to keep track of the place that the cursor is within the String) and String[] <em>characterNames</em> (array of names for each character that is printed out before each character speaks).
+      </p>
+
+      <!-- Code Taken from https://www.w3schools.com/howto/howto_js_slideshow.asp || Modified by Sohail -->
+      <!--Beginning of Comparisons Section-->
+      <h3 style="font-size: 48px; width: 50%; left: 25%">Class - Child Classes</h3>
+      <!-- Slideshow container -->
+      <div class="slideshow-container">  
+        <!-- Full-width images with number and caption text -->
+        <div class="mySlides4 fade">
+          <img src="screenshots/childClassMaps.png" id="map">
+        </div>
+      
+        <div class="mySlides4 fade">
+          <img src="screenshots/matilda.png" style="width:100%">
+        </div>
+
+        <div class="mySlides4 fade">
+          <img src="screenshots/boulderBrian.png" style="width:100%">
+        </div>
+
+        <div class="mySlides4 fade">
+          <img src="screenshots/lemonBlemon.png" style="width:100%">
+        </div>
+
+        <div class="mySlides4 fade">
+          <img src="screenshots/hotelManager.png" style="width:100%">
+        </div>
+
+        <div class="mySlides4 fade">
+          <img src="screenshots/redDrink.png" style="width:100%">
+        </div>
+
+        <!-- Next and previous buttons -->
+        <a class="prev" onclick="plusSlides(-1, 3)" style="background-color: rgba(0, 0, 0, 0.2);">&#10094;</a>
+        <a class="next" onclick="plusSlides(1, 3)" style="background-color: rgba(0, 0, 0, 0.2);">&#10095;</a>
+      </div>
+      <br>
+      <br>
+      <p style="font-size: 24px">
+        This final slideshow showcases all of the child classes in our game for each of the characters that we have in the game. The code for each of the classes remains relatively the same throughout the building of the code. The only thing that we decided to change for the Matilda class was that we got rid of the Intensity and angryUp code since it was deemed useless to the overall plot of the story. Furthermore, for redDrink, we got rid of the drink method as it did not contribute to the overall story and since we tweaked the character of Red Drink significantly between these two processes, leaving no point to the drink() method. Finally, for each child class, we incorporated the speak() method into their specific class, allowing for the proper methods to be called within the appropriate class.
+      </p>
+    <div>
+  </body>
+</html>
+/*************************** END OF CHANGE.HTML************************/
+/******************** START OF STYLES.CSS *****************************/
+/*
+  David Cacorovski, Jeremy Thummel, Sohail Meghani
+  January 20th, 2022
+  styles
+  This is the styles.css where we style our website.
+*/
+@import url('https://fonts.googleapis.com/css2?family=Luxurious+Roman&display=swap');
+
+html{
+  scroll-behavior: smooth;
+}
+
+#logo{
+  display: inline-block;
+  margin-left: 25%;
+  margin-right: auto;
+  width: 50%;
+  top: -15%;
+  position: absolute;
+}
+
+@keyframes slideDown{
+  from {top: -15%;}
+  to {top: 9%;}
+}
+
+#reel{
+  position: absolute;
+  margin-left: 27%;
+  margin-top: -3%;
+  width: 45%;
+  height: auto;
+}
+
+p{
+  z-index: -2;
+  padding-top: 5px;
+  padding-right: 10px;
+  padding-left: 10px;
+  padding-bottom: 10px;
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  position: relative;
+  text-align: center;
+  width: 60%;
+  left: 20%;
+  font-family: 'Luxurious Roman';
+  font-size: 40px;
+  text-shadow: -0px -0px 0 #000, 0px -0px 0 #000, -0px 0px 0 #000, 2px 2px 0 #000;
+}
+
+#phototext{
+  z-index: -2;
+  padding-top: 5px;
+  padding-right: 10px;
+  padding-left: 10px;
+  padding-bottom: 10px;
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  position: relative;
+  text-align: center;
+  width: 75%;
+  left: 12.5%;
+  font-family: 'Luxurious Roman';
+  font-size: 20px;
+  text-shadow: -0px -0px 0 #000, 0px -0px 0 #000, -0px 0px 0 #000, 2px 2px 0 #000;
+}
+
+h2, h3{
+  z-index: -2;
+  padding-top: 5px;
+  padding-right: 10px;
+  padding-left: 10px;
+  padding-bottom: 10px;
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  position: relative;
+  text-align: center;
+  width: 60%;
+  left: 20%;
+  font-family: 'Luxurious Roman';
+  font-size: 65px;
+  text-shadow: -0px -0px 0 #000, 0px -0px 0 #000, -0px 0px 0 #000, 2px 2px 0 #000;
+}
+
+body{
+  background-image: url('images/islandBackground.png');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+}
+
+/*Code taken from https://www.w3schools.com/howto/howto_js_sidenav.asp || Edited by Jeremy and Sohail*/
+/* The side navigation menu */
+.sidenav {
+  height: 100%; /* 100% Full-height */
+  width: 0; /* 0 width - change this with JavaScript */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Stay on top */
+  top: 0; /* Stay at the top */
+  left: 0;
+  background-color: rgba(135, 206, 235, 0.4); /* Black*/
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 60px; /* Place content 60px from the top */
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+}
+
+/* The navigation menu links */
+.sidenav a {
+  font-family: 'Lato', sans-serif;
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: black;
+  text-align: center;
+  margin-left: -1.5%;
+  font-weight: bolder;
+  display: block;
+  transition: 0.3s;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+  position: absolute;
+  top: 1px;
+  left:-11.5px;
+  font-size: 36px;
+  float: left;
+}
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+  transition: margin-left .5s;
+  padding: 20px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+#menuImg{
+  width: 2%; 
+  height: auto;
+  display: inline-block; 
+  background-color: rgba(0, 0, 0, 0.4); 
+  filter: inverse(1);
+	transition-duration: 1s;
+  transition-property: transform;
+  position: fixed;
+}
+#menuImg:hover{
+	transform: rotate(360deg);
+}
+
+.helpImage{
+  width: 50%;
+  margin-left: 25%;
+  border: 1px solid black;
+  border-radius: 2%;
+}
+
+@keyframes embiggen{
+  from {width: 50%; margin-left: 25%;}
+  to {width: 75%; margin-left: 12.5%}
+}
+
+@keyframes embiggenMap{
+  from {width: 30%; margin-left: 32.5%;}
+  to {width: 65%; margin-left: 17.5%}
+}
+
+
+.helpImage:hover{
+  animation: embiggen 1s ease;
+  width: 75%;
+  margin-left: 12.5%;
+}
+/*Code Taken from https://www.w3schools.com/howto/howto_js_slideshow.asp || Modified by Sohail*/
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides1 {
+  display: none;
+}
+
+.mySlides2 {
+  display: none;
+}
+
+.mySlides3 {
+  display: none;
+}
+
+.mySlides4 {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+#map{
+  width: 35%;
+  margin-left: 32.5%;
+}
+
+#map:hover{
+  animation: embiggenMap 1s ease;
+  width: 65%;
+  margin-left: 17.5%;
+}
+/*********************** END OF STYLES.CSS ********************/
+/************************* GAME CODE STARTS HERE ********************/
+/************************* START OF MAIN.JAVA ***************************/
+/*
+  David Cacorovski, Jeremy Thummel, Sohail Meghani
+  January 20th, 2022
+  ICS4U Final Summative
+  This is the main game file for the final project of the dream team.
+*/
+
+//imports
+
+import java.util.*;
+import java.io.*;
+//we dont need to import characterManager since that's an abstract class used to make the character classes (e.g. character classes are only classes that need access to characterManager)
+import characterClassBB.boulderBrianCharacter;
+import characterClassRD.redDrinkCharacter;
+import characterClassM.matildaCharacter;
+import characterClassLB.lemonBlemonCharacter;
+import characterClassHM.hotelManagerCharacter;
+import characterClassP.playerCharacter;
+import clue.analyzeClues;
+import trial.trialEvent;
+
+public class Main
+{
+  //Creating objects for each character. This is used to make them speak, set their speech, etc...
+  public static lemonBlemonCharacter lemonBlemon = new lemonBlemonCharacter();
+  public static boulderBrianCharacter boulderBrian = new boulderBrianCharacter();
+  public static hotelManagerCharacter hotelManager = new hotelManagerCharacter();
+  public static matildaCharacter matilda = new matildaCharacter();
+  public static redDrinkCharacter redDrink = new redDrinkCharacter();
+  public static playerCharacter player = new playerCharacter();
+  public static void main(String[] args)
+  {//****ONLY HAVE THE STRING[] ARGS LINE OF CODE ON MAIN.JAVA NO OTHER .JAVA FILE****
+
+    //initialize Scanner object and variables
+    String name;
+    Scanner scan = new Scanner(System.in);
+    int trialAnswer;
+
+    //Start of the game, \u001b[32m is to change the color in the java console. This instance turns the color green.
+    System.out.println("\u001b[32m"+"=-=-=-=-=-=-=-=-=-=-=-=-=");
+    System.out.println("\u001b[32m"+" Welcome to Palm Island!");
+    System.out.println("\u001b[32m"+"=-=-=-=-=-=-=-=-=-=-=-=-=");
+    System.out.println("\n" + "\u001b[32m"+"You and four others are on an island, with a volcano about to explode.");
+    System.out.println("\n" + "\u001b[32m"+"Unfortunately, there are only four seats left on a private jet,\nand no one knows who should leave and who should stay behind!");
+    System.out.println("\n" + "You are one of the unlucky souls still left on the island!\nWhat is your name?");
+    System.out.print("\n\n>>>> ");
+    //ask user for name and store it in a variable
+    name = scan.nextLine();
+    player.yourName = name;
+
+    while(name.length()>10)
+    {
+      System.out.println("Please enter a name 10 characters or less.");
+      name = scan.nextLine();
+      player.yourName = name;
+    }
+    
+    //From here on out its just mostly dialogue (player.speech), comments past here will comment stuff that isn't dialogue.
+    player.speech = "Ah what a perfect time for a vacation.\nI can't wait to land and get to my hotel!";
+    player.speak();
+    scan.nextLine();//Just to have a pause so players can read text.
+    //Add a extra space just so we dont get each scan.nextLine mixed up.
+    System.out.println("\u001b[32m"+"After you landed you decided to sit back and relax,\nenjoy your vacation.");//outputs info to the user
+    scan.nextLine();
+    
+    System.out.println("A week passes... There's a government PSA\ntelling everyone to evacuate the island because\nof an erupting volcano!");//outputs info to the user
+    scan.nextLine();
+
+    System.out.println("Unfortunately, for you and five other people\nwho didn't hear the PSA and didn't notice everyone\nleaving the hotel, (due to the PSA being announced at night).");//outputs info to the user
+    scan.nextLine();
+
+    System.out.println("Now, the morning after the PSA...");//outputs info to the user
+    scan.nextLine();
+
+    player.speech = "*yawn* What an awesome vacation this was,\nwell I better start packing.";//tells the character what to say
+    player.speak();//outputs info to the user
+    scan.nextLine();//waits for user to press enter
+
+    System.out.println("\u001b[32m"+"After packing you go down to the hotel lobby.");
+    scan.nextLine();//waits for user to press enter
+
+    player.speech = "...Well, this is weird. Where is everyone?";//tells the character what to say
+    player.speak();//outputs info to the user
+    scan.nextLine();//waits for user to press enter
+
+    hotelManager.speech = "Gone. Everyone is gone.";//tells the character what to say
+    hotelManager.speak();//outputs info to the user
+    scan.nextLine();//waits for user to press enter
+
+    player.speech = "...What? What do you mean everyone is gone?";//tells the character what to say
+    player.speak();//outputs info to the user
+    scan.nextLine();//waits for user to press enter
+    
+    hotelManager.speech = "It's exactly what I mean.\nEVERYONE is gone.\nIf you're about to ask me why, I have no idea.";//tells the character what to say
+    hotelManager.speak();//outputs info to the user
+    scan.nextLine();//waits for user to press enter
+    
+    hotelManager.speech = "I'd imagine that there's more than \njust us who didn't hear the PSA.";//tells the character what to say
+    hotelManager.speak();//outputs info to the user
+    scan.nextLine();//waits for user to press enter
+
+    matilda.speech = "WHERE IS EVERYONE? HEY DO YOU WORK HERE?\nWHERE'S THE GUY THAT RUNS THE ICE CREAM BAR?";//tells the character what to say
+    matilda.speak();//outputs info to the user
+    scan.nextLine();//waits for user to press enter
+
+    hotelManager.speech = "He's... not here.";//tells the character what to say
+    hotelManager.speak();//outputs info to the user
+    scan.nextLine();//waits for user to press enter
+
+    matilda.speech = "NOOOOOOOOOOO!";//tells the character what to say
+    matilda.speak();//outputs info to the user
+    scan.nextLine();//waits for user to press enter
+
+    System.out.println("\u001b[32m"+"Matilda ran away crying.");//outputs info to the user
+    scan.nextLine();//waits for user to press enter
+
+    redDrink.speech = "Who was that cry baby?";//tells the character what to say
+    redDrink.speak();//outputs info to the user
+    scan.nextLine();//waits for user to press enter
+
+    hotelManager.speech = "Some spoiled brat.";//tells the character what to say
+    hotelManager.speak();//outputs info to the user
+    scan.nextLine();//waits for user to press enter
+
+    player.speech = "What are you? You look like a glass I'd drink out of.";//tells the character what to say
+    player.speak();//outputs info to the user
+    scan.nextLine();//waits for user to press enter
+
+    redDrink.speech = "Hey man, that's offensive to me and my people.";//tells the character what to say
+    redDrink.speak();//outputs info to the user
+    scan.nextLine();//waits for user to press enter
+
+    hotelManager.speech = "And who is your people?";//tells the character what to say
+    hotelManager.speak();//outputs info to the user
+    scan.nextLine();//waits for user to press enter
+
+    redDrink.speech = "Red Drink.";//tells the character what to say
+    redDrink.speak();//outputs info to the user
+    scan.nextLine();//waits for user to press enter
+
+    player.speech = "So, you're just a glass of Fruitopia?";//tells the character what to say
+    player.speak();//outputs info to the user
+    scan.nextLine();//waits for user to press enter
+    
+    redDrink.speech = "Look man, you're asking too much questions.\nYou might find an answer you don't like.";//tells the character what to say
+    redDrink.speak();//outputs info to the user
+    scan.nextLine();//waits for user to press enter
+
+    lemonBlemon.speech = "Hey what happened to this place? Where did everyone go?\nDid they do a disappearing act? HA!";//tells the character what to say
+    lemonBlemon.speak();//outputs info to the user
+    scan.nextLine();//waits for user to press enter
+
+    hotelManager.speech = "Everyone is gone, we don't know why, yadayadayada...";//tells the character what to say
+    hotelManager.speak();//outputs info to the user
+    scan.nextLine();//waits for user to press enter
+
+    matilda.speech = "HEY YOU LIAR! I FOUND THE ICE CREAM GUY RIGHT HERE.";
+    matilda.speak();
+    scan.nextLine();
+
+    boulderBrian.speech = "Get off me you crazy woman!";
+    boulderBrian.speak();
+    scan.nextLine();
+
+    matilda.speech = "NOT UNTIL YOU MAKE ME SOME ICE CREEEEEEEEEAAAAAAAAAA-";
+    matilda.speak();
+    scan.nextLine();
+
+    System.out.println("\u001b[32m"+"Matilda was inturupted by all of the surrounding televisions.");
+    scan.nextLine();
+
+    System.out.println("\u001b[34m"+"\nTV: YOUR ATTENTION PLEASE! Hello, unfortunately for you everyone has already evacuated.\nFor the remaining six people left on the island, there's only\none private jet and unfortunately again there's only\nfour seats available on the jet.");
+    scan.nextLine();
+
+    boulderBrian.speech = "Wait so you're telling me I can't go to the airport? I needed to-";
+    boulderBrian.speak();
+    scan.nextLine();
+
+    matilda.speech = "SHUSH ICE CREAM MAN, I'M WATCHING.";
+    matilda.speak();
+    scan.nextLine();
+
+    System.out.println("\u001b[34m"+"TV: The keys along with the private jet is at the hangar in the airport.\nAfter you've picked two people to leave behind you can board on the jet.\nGood luck.");
+    scan.nextLine();
+
+    player.speech = "We have to pick two people to leave behind?";
+    player.speak();
+    scan.nextLine();
+
+    player.speech = "If that's the case, then I think we should do this sooner-";
+    player.speak();
+    scan.nextLine();
+
+    boulderBrian.speech = "Are you kidding me? I was just about to leave for\nthe airport tomorrow! Now, we can't leave until we pick two pepole to leave?\nI'm not dealing with this right now.";
+    boulderBrian.speak();
+    scan.nextLine();
+
+    lemonBlemon.speech = "If I had to pick right now, one of them would be you.";
+    lemonBlemon.speak();
+    scan.nextLine();
+
+    boulderBrian.speech = "Do you know who I am? I am the Chief of Entertainment Operations.\nYOU DON'T GET TO SPEAK TO ME LIKE THAT! Puh.";
+    boulderBrian.speak();
+    scan.nextLine();
+
+    System.out.println("\u001b[32m"+"Boulder Brian stormed off upstairs.");
+    scan.nextLine();
+
+    hotelManager.speech = "Yeah, I think we have to clear our heads for a bit.\nThe fact we have to leave two people behind terrifies me.";
+    hotelManager.speak();
+    scan.nextLine();
+
+    System.out.println("\u001b[32m"+"Everyone left on their own except Red Drink.");
+    scan.nextLine();
+
+    redDrink.speech = "If it was up to me, I'd pick you bucko. Heheh.";
+    redDrink.speak();
+    scan.nextLine();
+
+    System.out.println("\u001b[32m"+"Red Drink rolled away.");
+    scan.nextLine();
+
+    player.speech = "That was really odd. I guess I'll just go back to my room for a bit.";
+    player.speak();
+    scan.nextLine();
+
+    System.out.println("\u001b[32m"+"After a few hours, you decided to order food. Maybe Hotel Manager\nwould still serve us even though no one else is here.");
+    scan.nextLine();
+
+    System.out.println("\u001b[32m"+"An hour goes by, and still, no answer. Maybe Hotel Manager isn't working.");
+    scan.nextLine();
+
+    player.speech = "I guess that would make sense. Maybe I should go find him.";
+    player.speak();
+    scan.nextLine();
+
+    System.out.println("\u001b[32m"+"You head down to the kitchen, thinking Hotel Manager might be making some food.");
+    scan.nextLine();
+
+    hotelManager.speak(false);//since hotel manager can no longer speak since he's dead, .speak is an overloaded function that allows us to define if a characer is dead or alive
+
+    //*****************WHEN PLAYER DISCOVERS BODY***************************
+    player.speech = "Hey listen, I've been trying to get in touch with you\nfor the last hour over the phone, Mr. Hotel Mana-";
+    player.speak();
+    scan.nextLine();
+
+    System.out.println("\u001b[32m"+"And what you saw made you puke for three minutes straight...");
+    scan.nextLine();
+
+    System.out.println("\u001b[32m"+"Hotel Manager's cold, lifeless body... inside the meat locker. Being eaten by a wildcat.");
+    scan.nextLine();
+
+    System.out.println("\u001b[32m"+"Boulder Brian and Lemon Blemon were there too.");
+    scan.nextLine();
+
+    System.out.println("\u001b[32m"+"You have gathered the remaining two people left on the island.");
+    scan.nextLine();
+    System.out.println("The angry girl Matilda.");
+    scan.nextLine();
+    System.out.println("And the mischevious Red Drink (he looks like a large red drink).");
+    scan.nextLine();
+
+    matilda.speech = "SO ARE WE GONNA IGNORE HOW YOU FOUND THE BODY \nIN THE MEAT LOCKER?";
+    matilda.speak();
+    scan.nextLine();
+
+    lemonBlemon.speech = "Would you rather have him find it in your room, missy? HA!";
+    lemonBlemon.speak();
+    scan.nextLine();
+
+    boulderBrian.speech = "If both of you don't shut up, you're next...";
+    boulderBrian.speak();
+    scan.nextLine();
+
+    redDrink.speech = "This is better than reality TV.";
+    redDrink.speak();
+    scan.nextLine();
+
+    player.speech = "Look guys, I stumbled across the body in the meat locker because of two things.";
+    player.speak();
+    scan.nextLine();
+    
+    player.speech = "Reason one, I was hungry and could not contact Hotel Manager for room service.\nSo, I was going to the meat locker to grab some food.";
+    player.speak();
+    scan.nextLine();
+    
+    player.speech = "Reason two, the door to the meat locker was open.\nSince we all know Hotel Manager hates\nletting the cold air out, I decided to check it out.";
+    player.speak();
+    scan.nextLine();
+
+    player.speech = "I called you all here to share my idea.\nWe should hold a trial to uncover the murderer... before the next person dies.";
+    player.speak();
+    scan.nextLine();
+    
+    matilda.speech = "TRIAL SHMIAL. WHY WOULD I WANT TO GO TO SOME DUMB TRIAL WHEN I CAN JUST \nCALL 911 AND LET THEM DEAL WITH IT?";
+    matilda.speak();
+    scan.nextLine();
+
+    lemonBlemon.speech = "Your IQ is 0.";
+    lemonBlemon.speak();
+    scan.nextLine();
+
+    player.speech = "There are no police, remember?\nWe're the last ones left on the island.\nSince there are still five of us, the killer just needs to eliminate one more person \nto secure their seat on the private jet.";
+    player.speak();
+    scan.nextLine();
+
+    redDrink.speech = "Hey guys... There's something on all of the TVs. It looks RATHER IMPORTANT.";
+    redDrink.speak();
+    scan.nextLine();
+
+    System.out.println("\u001b[32m"+"\nRed Drink winks at the non-existant cameras.");
+    scan.nextLine();
+
+    System.out.println("\u001b[34m"+"\nTV: This is a message to the remaining people left on the island from the government.\nAlthough we are NOT physically on the island,\nwe are still able to enforce our laws on the island!\nSo because we aren't there, we're going to have a trial for the murder of Hotel Manager,\nas per one of your fellow islanders request,\nand we will be monitoring it via all of the TVs.");
+    scan.nextLine();
+    
+    lemonBlemon.speech = "Okay, so... How should we start?";
+    lemonBlemon.speak();
+    scan.nextLine();
+
+    boulderBrian.speech = "Alright, I'm gonna lay it down for ya.\nI was with Lemon when he released a wildcat.\nWe both went up and saw the wildcat eating Hotel Manager.";
+    boulderBrian.speak();
+    scan.nextLine();
+
+    boulderBrian.speech = "Seems obvious, but yeah.\nAs chief of entertainment operations,\nmy guess is Lemon stuffed em' in the fridge to not cause suspision.";
+    boulderBrian.speak();
+    scan.nextLine();
+
+    player.speech = "I'm not so sure that this case is that simple.\nWhy did you not let anyone know?\nAlso what does your position have to do with any of this?";
+    player.speak();
+    scan.nextLine();
+
+    boulderBrian.speech = "He said he would kill me.\nBut since we're all here, if I die, you'll know it was him.";
+    boulderBrian.speak();
+    scan.nextLine();
+
+    lemonBlemon.speech = "I'm suing you after I get off this island.";
+    lemonBlemon.speak();
+    scan.nextLine();
+
+    player.speech = "Alright alright, I'm going to investigate,\nand I'll meet you all back here in the hotel lobby at seven o'clock tonight.";
+    player.speak();
+    scan.nextLine();
+
+    matilda.speech = "THIS IS BORING IM GOING BACK TO MY ROOM.";
+    matilda.speak();
+    scan.nextLine();
+
+    lemonBlemon.speech = "I'm gonna go investigate on my own. I don't want to be falsely accused.";
+    lemonBlemon.speak();
+    scan.nextLine();
+
+    System.out.println("\u001b[32m"+"You went into the meat locker.");
+    scan.nextLine();
+    
+    //*************** CLUE AREA 1 *********************
+    
+    //Creates clueArea1 object and goes into analyzeClues.
+    analyzeClues clueArea1 = new analyzeClues();
+    //Titles of each clue.
+    clueArea1.clue1="Hotel Manager's body.";
+    clueArea1.clue2="Red liquid on the floor.";
+    clueArea1.clue3="Scratch marks on the wide variety of meats.";
+
+    //Below are the descriptions of the items when you inspect them, executed by clueInspection
+    clueArea1.clueDescription1="\nThe body seems to have scratches from the wildcat \nall over it. When you further inspect the body there \nseems to be stabs wounds on the left side of his body.\nThere is also a lot of meat on the floor,\nthat does not look like meat hanging in the locker.";
+    clueArea1.clueDescription2="\nIt's red liquid, and you can't tell if it's blood, or Red Drink's red drink made in-house.";
+    clueArea1.clueDescription3="\nThere's scratches on all the meats.\nKind of self explanatory.";
+    //after you've set up the above clue area 1, now you can just call the methods!
+    //clueAnalyzing is just an intro of text, applicable to all clueAreas
+    clueArea1.clueAnalyzing();
+
+    //clueInspection is what loops the clue inspection part of our game, and will automatically stop if you enter 4 to progress the story
+    //writing any code after clueInspection will execute after the player is done with inspecting the clues in clueArea1
+    clueArea1.clueInspection();
+    
+    player.speech = "Hey Boulder Brian, did you see these stab wounds on Hotel Manager's body?";
+    player.speak();
+    scan.nextLine();
+
+    boulderBrian.speech = "No, I didn't. Could've just been claws.";
+    boulderBrian.speak();
+    scan.nextLine();
+
+    player.speech = "Maybe... I'm gonna do some investegating upstairs.";
+    player.speak();
+    scan.nextLine();
+    
+    boulderBrian.speech = "Why? The murder was on this floor? What are you going to find upstairs?";
+    boulderBrian.speak();
+    scan.nextLine();
+
+    player.speech = "I'm not sure, its just a hunch.";
+    player.speak();
+    scan.nextLine();
+
+    System.out.println("\u001b[32m"+"You took your time as not to fall, and walked up the stairs like an established gentleperson.");
+    scan.nextLine();
+
+    System.out.println("\u001b[32m"+"Boulder Brian not wanting you to go upstairs\nmakes you naturally interested in going into his room.");
+    scan.nextLine();
+
+    System.out.println("\u001b[32m"+"You enter room #283.");
+    scan.nextLine();
+
+    //*************** CLUE AREA 2 *********************
+
+    analyzeClues clueArea2 = new analyzeClues();
+    clueArea2.clue1="The closet door is open.";
+    clueArea2.clue2="There's a tray for holding a\n   wide variety of meats on the floor.";
+    clueArea2.clue3="Blood on the nightstand.";
+    
+    clueArea2.clueDescription1="\nThe closet door has meat piled up.\nIt's as if Brian is going to use them for something dubious.";
+    clueArea2.clueDescription2="\nThe fork and knife are missing, huh.";
+    clueArea2.clueDescription3="\nLemon Blemon couldn't have drawn\nsomeone else's blood, could he have?";
+    clueArea2.clueAnalyzing();
+
+    clueArea2.clueInspection();
+
+    player.speech = "Well, that settles it. I need a drink after all this work.";
+    player.speak();
+    scan.nextLine();
+
+    System.out.println("\u001b[32m"+"You go outside the hotel and wonder off to\nLemon Blemon's Lemonade Stand for Lemon Lovers.");
+    scan.nextLine();
+
+    System.out.println("\u001b[32m"+"Lemon Blemon's not there, so you go into the juice bar to make some juice.");
+    scan.nextLine();
+
+    //*************** CLUE AREA 3 *********************
+
+    analyzeClues clueArea3 = new analyzeClues();
+    clueArea3.clue1="A letter on the bar countertop.";
+    clueArea3.clue2="An open cage.";
+    clueArea3.clue3="A diary entry (just one entry,\n   it'd be rude to look at all of them).";
+
+    clueArea3.clueDescription1="\nIt's a letter of demotion wrote out to Lemon Blemon,\nexplaining how he's suitied more to a position as a juice maker more\nthan chief of entertainment operations.";
+    clueArea3.clueDescription2="\nIt's a cage with a faint smell of wildcat.";
+    clueArea3.clueDescription3="\nYou read it. It reads:\n\nFirst Brian takes my job, and then he threatens to tell people I tried to kill him\nwith the wildcat. Darn it, if not for that trail of meats, the wildcat I didn't feed\nfor two days would've gone for Brian, not ended up\nin the locker with Hotel Manager!\nMan do I feel guilty.\nI even lured Brian to the stand with the\noffer of a free lemonade! What a waste of lemonade! HA!";
+    clueArea3.clueAnalyzing();
+
+    clueArea3.clueInspection();
+
+    System.out.println("\u001b[32m"+"\nUsing all of the evidence you've collected, you feel ready to take on the trial.");
+    scan.nextLine();
+
+    System.out.println("\u001b[32m"+"You look at the sun retreating into dusk, and hear a loud voice from a speaker above you.");
+    scan.nextLine();
+
+    System.out.println("\u001b[34m"+"\nSpeaker: Attention all possible murderers and or islanders left on the island, it is now time\nfor the seven o'clock trial. Please gather in the trial hall.");
+    scan.nextLine();
+    
+
+    // ******************************************TRIAL 1 CODE****************************
+    System.out.println("\u001b[32m"+"\nThe trial for the murder of Hotel Manager will now begin!\nAs you are progressing through text boxes, make sure to press enter to progress,\nyou can always scroll up the console in case you miss anything.\nEnter anything when you are ready for the trial:");
+    scan.nextLine();//Scan just to make a pause here, basically useless.
+    
+    matilda.speech = "WOW I CAN'T BELIEVE WE'RE ACTUALLY GOING THROUGH A STUPID TRIAL!\nI COULD BE IN MY ROOM RIGHT NOW.";
+    matilda.speak();
+    scan.nextLine();
+    
+    player.speech = "It's going to be quick Matilda, trust me. With all of the evidence I found,\nit should be pretty straight forward.";
+    player.speak();
+    scan.nextLine();
+
+    redDrink.speech = "You know who the killer is?";
+    redDrink.speak();
+    scan.nextLine();
+
+    boulderBrian.speech = "I hope your evidence coincides with mine.\nThe murderer is Lemon Blemon!";
+    boulderBrian.speak();
+    scan.nextLine();
+    
+    trialEvent trial1 = new trialEvent(); //Making object and goes through trialEvent
+    //Below is trial text for the trialEvent.
+    trial1.trialText1 = "Boulder Brian: Remember how all the meats in the meat locker were scratched up? Probably\nLemon Blemon rewarding his wildcat for good behaviour\nwith some new chew toys.";
+    trial1.trialText2 = "Matilda: MY ROOM IS RIGHT NEXT TO BOULDER BRIAN'S, AND HIS ROOM SMELLS LIKE MEAT!\nCAN WE TALK ABOUT THIS?";
+    trial1.trialText3 = "Boulder Brian: Why would I kill a fellow employee? Go check Blemon's\nlemonade stand, I guarentee he has a wildcat cage!";
+    trial1.trialText4 = "Lemon Blemon: Well I was there all day, and I didn't see a cage! HA!";
+    trialAnswer=trial1.trial();//trial returns the right trialAnswer
+
+    if(trialAnswer==1)//the if statements show you if you're right or wrong
+    {
+      System.out.println("\u001b[34m"+"\nYou are wrong, that statement is true! The meats were scratched up. Please try again, but this time inspect and remember all of the items and their descriptions.");
+
+      System.out.println("\n< GAME OVER >");
+      System.exit(0);//this exits the program without an error message, forcing the player to restart.
+    }
+
+    else if(trialAnswer==2)
+    {
+      System.out.println("\u001b[34m"+"\nYou are wrong, that statement is true! Boulder Brian had a stash of meat inside of his closet. Please try again, but this time inspect and remember all of the items and their descriptions.");
+
+      System.out.println("\n< GAME OVER >");
+      System.exit(0);
+    }
+
+    else if(trialAnswer==3)
+    {
+      System.out.println("\u001b[34m"+"\nYou are wrong, that statement is true! Though Boulder Brian may or may not know if what he said is a fact, you know that there really is a wildcat cage in the lemonade stand. Please try again, but this time inspect and remember all of the items and their descriptions.");
+
+      System.out.println("\n< GAME OVER >");
+      System.exit(0);
+    }
+
+    else if(trialAnswer==4)
+    {
+      System.out.println("\u001b[34m"+"\nYou are correct! You remembered Lemon Blemon was absent from his lemonade stand.");
+    }
+
+    player.speech = "No, that's wrong! You were not at your lemonade stand!";
+    player.speak();
+    scan.nextLine();
+
+    player.speech = "Your job was also taken by Boulder Brian,\nexplaining your hatred for one another.";
+    player.speak();
+    scan.nextLine();
+
+    lemonBlemon.speech = "Ok I admit it, I tried to kill Brian.\nBut we were not together during the murder.";
+    lemonBlemon.speak();
+    scan.nextLine();
+
+    lemonBlemon.speech = "After I released the wildcat, it started rushing to the meat locker\ninstead of Boulder Brian's room.\nSeemed to me like there was a trail of meats leading to Hotel Manager's already dead body!";
+    lemonBlemon.speak();
+    scan.nextLine();
+
+    redDrink.speech = "Hotel Manager was already dead before the wildcat got to him?";
+    redDrink.speak();
+    scan.nextLine();
+
+    lemonBlemon.speech = "Yes, and though I admit to attempted murder,\nI won't admit to trying to kill Hotel Manager!";
+    lemonBlemon.speak();
+    scan.nextLine();
+
+    lemonBlemon.speech = "I believe that putrid act belongs to Boulder Brian!\nHe must have known about the wildcat,\nand through the use of a trail of meat,\nframed me and my wildcat companion!\nAlso if you find my pretty kitty\ncall +1 (960) 0214-007. Thank you.";
+    lemonBlemon.speak();
+    scan.nextLine();
+
+    boulderBrian.speech = "Lemon, you came running after the wildcat.";
+    boulderBrian.speak();
+    scan.nextLine();
+
+    boulderBrian.speech = "You saw me in front of the cold, dead body.";
+    boulderBrian.speak();
+    scan.nextLine();
+
+    boulderBrian.speech = "You really think people are gonna believe that?\nBy the way, the reason I was with\nLemon Blemon when the body was found, should be obvious.";
+    boulderBrian.speak();
+    scan.nextLine();
+
+    boulderBrian.speech = "Lemon Blemon was going to use the wildcat to kill me\nif I didn't get in the meat locker.";
+    boulderBrian.speak();
+    scan.nextLine();
+
+    redDrink.speech = "Why wouldn't he just kill you on sight then?";
+    redDrink.speak();
+    scan.nextLine();
+
+    boulderBrian.speech = "Do you ever shut up?";
+    boulderBrian.speak();
+    scan.nextLine();
+
+    redDrink.speech = "That's harsh...";
+    redDrink.speak();
+    scan.nextLine();
+
+    redDrink.speech = "Especially coming from the ice cream man.";
+    redDrink.speak();
+    scan.nextLine();
+
+    System.out.println("\u001b[32m"+"Red Drink winks at the non-existant cameras.");
+    scan.nextLine();
+
+    //********************************* TRIAL 2
+
+    trialEvent trial2 = new trialEvent();
+    trial2.trialText1 = "Red Drink: Well, I'm sold on Boulder Brian. I keep meat in my closet\nbut never while I'm on vacation.";
+    trial2.trialText2 = "Boulder Brian: What? I had meat in my closet because I was hungry.\nIt's not easy eating all of that meat with just a fork and knife.";
+    trial2.trialText3 = "Matilda: REMEMBER WHAT BOULDER BRIAN SAID, IT COULD BE LEMON BLEMON TRYING TO FRAME HIM.\nTHOUGH I'M STILL SIDING WITH LEMON BLEMON, HE EVEN ADMITTED TO ATTEMPTED MURDER!\nWAIT, ARE WE STILL GOING TO TAKE LEMON BLEMON ON THE PLANE WITH US IF HE'S INNOCENT?";
+    trial2.trialText4 = "Lemon Blemon: I gave my lemons to you, I am not framing anybody. I was just abiding by Boulder Brian's request not to rat him out, so that he would not turn the evidence on to me. It's up to you to take what I told you, and make lemonade. HA! I'm so smart...";
+    trialAnswer=trial2.trial();//trial returns the right trialAnswer
+
+    if(trialAnswer==1)//the if statements show you if you're right or wrong
+    {
+      System.out.println("\u001b[34m"+"\nYou are wrong, that statement is true! Red Drink does not keep meat in his closet on his trips! Please try again, but this time remember all of Red Drink's quirky personality traits.");
+
+      System.out.println("\n< GAME OVER >");
+      System.exit(0);//this exits the program without an error message
+    }
+
+    else if(trialAnswer==2)
+    {
+      System.out.println("\u001b[34m"+"\nYou are correct! You remembered there was no fork or knife left on Boulder Brian's food tray.");
+    }
+
+    else if(trialAnswer==3)
+    {
+      System.out.println("\u001b[34m"+"\nYou are wrong, that statement is true! Lemon Blemon admitted to attempted murder,\nand both of them are just as suspicious.\nPlease try again, but this time inspect and\nremember all of the items and their descriptions.");
+
+      System.out.println("\n< GAME OVER >");
+      System.exit(0);
+    }
+
+    else if(trialAnswer==4)
+    {
+      System.out.println("\u001b[34m"+"\nYou are wrong, that statement is true!\nWhat Lemon Blemon says does add up with the evidence,\nhowever Boulder Brian's statements have not been.\nPlease try again, but this time inspect and remember \nall of the items and their descriptions.");
+
+      System.out.println("\n< GAME OVER >");
+      System.exit(0);
+    }
+
+    player.speech = "No, that's wrong! There was no fork or knife to be found in your room!\nI believe you used the utensils to stab Hotel Manager,\nand then framed the wildcat for the murder\nusing your various spread of unique meats!";
+    player.speak();
+    scan.nextLine();
+
+    matilda.speech = "CASE CLOSED, HAVE FUN BOULDER BRIAN, FUN IN JAIL! HA-";
+    matilda.speak();
+    scan.nextLine();
+
+    lemonBlemon.speech = "That's my line.";
+    lemonBlemon.speak();
+    scan.nextLine();
+
+    System.out.println("\u001b[32m"+"\nLemon Blemon looks to the sky in disapproval.");
+    scan.nextLine();
+    
+    player.speech = "But why? Why did you do it Boulder Brian?";
+    player.speak();
+    scan.nextLine();
+
+    //Makes Boulder Brain say Talk 3 times.
+    for(int x=0;x<3;x++)
+    {
+      boulderBrian.speech = "Talk.";
+      boulderBrian.speak();
+      scan.nextLine();
+    }
+    
+    boulderBrian.speech = "Hotel Manager, it's in his name.\nAfter taking Lemon Blemon's job,\nhow am I suppose to climb the ranks of this company\nwhen the hotel manager is named Hotel Manager?";
+    boulderBrian.speak();
+    scan.nextLine();
+
+    boulderBrian.speech = "My only option was to kill him.\nThough my reasoning for such a passion I can not share to you all,\nI needed a spot to open up for a position as hotel manager...";
+    boulderBrian.speak();
+    scan.nextLine();
+
+    player.speech = "Well Brian, hope you like warm baths.";
+    player.speak();
+    scan.nextLine();
+
+    boulderBrian.speech = "Wha-";
+    boulderBrian.speak();
+    scan.nextLine();
+
+    System.out.println("\u001b[32m"+"Ten long minutes pass.");
+    scan.nextLine();
+
+    System.out.println("\u001b[34m"+"TV: Excellent job islanders! Thanks to you,\nwe can eliminate the threat to society right here, right now!");
+    scan.nextLine();
+
+    System.out.println("\u001b[32m"+"You stand at the top of the volcano with\nBoulder Brian tied around a large boulder.");
+    scan.nextLine();
+
+    player.speech = "Well Brian, I'll say it once more, hope you like warm baths.";
+    player.speak();
+    scan.nextLine();
+
+    System.out.println("\u001b[32m"+"Good job! You beat Palm Treechery Part I,\nthanks to your good detective skills, and intuition! See you in Part II!");
+    
+    /*
+    //*********************************************************************************
+    //BELOW IS EXAMPLE CODE TO SEE HOW CODE WORKS, DELETE IN FINAL VERSION OF SUMMATIVE
+    boulderBrian.speech = "Hello "+player.name+", I am Boulder Brian. Uh oh, why is there a knife on the floor?";
+    boulderBrian.speak();
+
+    //ALWAYS MUST BE 3 CLUES EXACTLY
+    //Below you see what items you can inspect, as well as constructing the first clue area
+    analyzeClues clueArea1 = new analyzeClues();
+    clueArea1.clue1="Knife on the floor.";
+    clueArea1.clue2="Blood on Boulder Brian's shirt.";
+    clueArea1.clue3="Ripped piece of paper next to the knife.";
+
+    //Below are the descriptions of the items when you inspect them, executed by clueInspection
+    clueArea1.clueDescription1="\nThe knife has a signature engraved on it.";
+    clueArea1.clueDescription2="\nThe blood looks fresh.";
+    clueArea1.clueDescription3="\nThe paper roughly spells out The Killer is Boul-, and then the paper tears.";
+
+    //after you've set up the above clue area 1, now you can just call the methods!
+    //clueAnalyzing is just an intro of text, applicable to all clueAreas
+    clueArea1.clueAnalyzing();
+
+    //clueInspection is what loops the clue inspection part of our game, and will automatically stop if you enter 4 to progress the story
+    //writing any code after clueInspection will execute after the player is done with inspecting the clues in clueArea1
+    clueArea1.clueInspection();
+
+    //now we can execute a mini trial to test out the trial functionality and kill Boulder Brian
+    //below trial function sets a time limit and will give you that much time to gather your evidence
+    trialEvent trial1 = new trialEvent();
+    //you must also change the trial text in Main depending on how many people are alive during the trial (in this case it would just say Boulder Brian)
+    trial1.trialText1 = "Boulder Brian: The paper was torn, maybe the person just slipped?";
+    trial1.trialText2 = "Boulder Brian: There was no blood on my shirt, so it was not me!";
+    trial1.trialText3 = "Boulder Brian: That knife had someone's name on it.";
+    trial1.trialText4 = "Boulder Brian: Yea yea mfs";
+    trialAnswer=trial1.trial();//trial returns the right trialAnswer
+    if(trialAnswer==1)//the if statements show you if you're right or wrong
+    {
+      System.out.println("You are wrong, that statement is not false!!");
+      System.exit(0);//this exits the program without an error message
+    }
+
+    else if(trialAnswer==2)
+    {
+      System.out.println("DING DING, CORRECT! YOU ARE RIGHT! THAT IS FALSE! HE IS THE MURDERER!");
+      System.out.println("The government sent him off to the volcano to perish. ggez");
+      System.exit(0);
+    }
+
+    else if(trialAnswer==3)
+    {
+      System.out.println("You are wrong, that statement is not false!!");
+      System.exit(0);
+    }
+    */
+  }
+}
+/************************* END OF MAIN.JAVA***************************/
+/************************ START OF analyzeClues.JAVA *****************************/
+/*
+  David Cacorovski, Jeremy Thummel, Sohail Meghani
+  January 20th, 2022
+  analyzeClues Class File
+  This is the file that will store the code for analyzeClues section.
+*/
+//this package allows clue to be accessible to Main.java
+package clue;
+
+import java.util.*;
+
+public class analyzeClues
+{
+  
+  Scanner scan = new Scanner(System.in);
+  //initialize variables
+  public String clue1;
+  public String clue2;
+  public String clue3;
+  public String selectClue;
+  public String clueDescription1;
+  public String clueDescription2;
+  public String clueDescription3;
+  public String clueCount;
+  //Used to make a statement and move on to clueInspection
+  public void clueAnalyzing()
+  {
+    System.out.println("");
+    System.out.println("\u001b[32m"+"You look around and decide to inspect some items.");
+  }
+
+  public void clueInspection()
+  {
+    while(true)
+    {
+      System.out.println("");
+      System.out.println("\u001b[32m"+"You go to the scene of interest.");
+      //Shows each clue.
+      System.out.println("1. "+clue1);
+      System.out.println("2. "+clue2);
+      System.out.println("3. "+clue3);
+      System.out.println("What will you inspect? (1, 2, or 3 to inspect, or 4 to progress the story):");
+
+      clueCount = scan.nextLine();//gets input
+      while(true)//checks input
+      {
+        //Pretty self explanitory if you look at line 42.
+        if(clueCount.equals("1"))
+          break;
+
+        else if(clueCount.equals("2"))
+          break;
+
+        else if(clueCount.equals("3"))
+          break;
+
+        else if(clueCount.equals("4"))
+          break;
+
+        else
+        {
+          System.out.println("\u001b[32m"+"Please pick 1, 2, or 3 to inspect, or 4 to progress the story:");
+          clueCount = scan.nextLine();
+        }
+      }
+
+      //below code executes based on input
+      if(clueCount.equals("1"))
+      {
+        System.out.println("\u001B[34m"+clueDescription1);
+        scan.nextLine();
+      }
+    
+      else if(clueCount.equals("2"))
+      {
+        System.out.println("\u001B[34m"+clueDescription2);
+        scan.nextLine();
+      }
+
+      else if(clueCount.equals("3"))
+      {
+        System.out.println("\u001B[34m"+clueDescription3);
+        scan.nextLine();
+      }
+
+      else if(clueCount.equals("4"))
+        break;
+
+    }
+  }
+}
+/*************************** END OF analyzeClues.JAVA ***************/
+/*********************** START OF BOULDERBRIANCHARACTER.JAVA ***********//
+/*
+  David Cacorovski, Jeremy Thummel, Sohail Meghani
+  January 20th, 2022
+  boulderBrainCharacter Child Class
+  This is the child class in which we make the character speak, and die (depending on which character)
+*/
+//make a package to import classes from characterManager.java to Main.java
+package characterClassBB;
+//import abstract class from characterManager.java
+import characterM.characterManager;
+
+public class boulderBrianCharacter extends characterManager
+{
+  //initialize parameters and variables
+  boolean alive=true;
+  int index=0;
+  final String boulderName = "\n" + "\u001b[0m" + characterNames[0];
+  //initialize methods
+  public void speak()
+  {
+    System.out.print(boulderName);
+    System.out.print(speech);
+    System.out.println("\n");
+  }
+
+  public void speak(boolean alive)//this mainly helped us program the game, since we would never get confused with the plot of our game, because if we type System.out.println(character'sName.alive) it would print true or false, helping us remember if we already killed the character or not
+  {
+    this.alive=alive;//makes the character's alive value equal to true or false depending on parameters given to the .speak method
+  }
+}
+/********************* END OF BOULDERBRIANCHARACTER.JAVA *************************/
+/********************* START OF characterManager.JAVA ************/
+/*
+  David Cacorovski, Jeremy Thummel, Sohail Meghani
+  January 20th, 2022
+  characterManager Abstract Class
+  This is the abstract class in which we initialize all of our characters 
+*/
+//make a package to import classes from characterManager.java to individual character .java files
+package characterM;
+
+public abstract class characterManager
+{
+  //initialize variables used in child classes
+  public String speech;//must be public to change what character says in Main.java
+  protected boolean alive;
+  public char indexLetter;//for printing out text letter by letter
+  public int index;//keeps track of index in the string
+  protected String[] characterNames={"Boulder Brian: ","Hotel Manager: ","Lemon Blemon: ","Matilda: ","Red Drink: "};
+
+  //initialize methods
+  public abstract void speak();
+}
+/************************** END OF CHARACTERMANAGER.JAVA *******************/
+/*********************** START OF HOTELMANAGERCHARACTER.JAVA *************/
+/*
+  David Cacorovski, Jeremy Thummel, Sohail Meghani
+  January 20th, 2022
+  hotelManagerCharacter Child Class
+  This is the child class in which we make the character speak, and die (depending on which character)
+*/
+//make a package to import classes from characterManager.java to Main.java
+package characterClassHM;
+//import abstract class from characterManager.java
+import characterM.characterManager;
+
+public class hotelManagerCharacter extends characterManager
+{
+  //initialize parameters and variables
+  boolean alive=true;
+  int index=0;
+  final String hotelName = "\n" + "\u001b[0m" + characterNames[1];
+  //initialize methods
+  public void speak()
+  {
+    System.out.print(hotelName);
+    System.out.print(speech);
+    System.out.println("\n");
+  }
+
+  public void speak(boolean alive)//this mainly helped us program the game, since we would never get confused with the plot of our game, because if we type System.out.println(character'sName.alive) it would print true or false, helping us remember if we already killed the character or not
+  {
+    this.alive=alive;//makes the character's alive value equal to true or false depending on parameters given to the .speak method
+  }
+}
+/********************* END OF HOTELMANAGERCHARACTER.JAVA *****************/
+/******************** START OF LEMONBLEMONCHARACTER.JAVA *****************/
+/*
+  David Cacorovski, Jeremy Thummel, Sohail Meghani
+  January 20th, 2022
+  lemonBlemonCharacter Child Class
+  This is the child class in which we make the character speak, and die (depending on which character)
+*/
+//make a package to import classes from characterManager.java to Main.java
+package characterClassLB;
+//import abstract class from characterManager.java
+import characterM.characterManager;
+
+public class lemonBlemonCharacter extends characterManager
+{
+  //initialize parameters and variables
+  boolean alive=true;
+  int index=0;
+  final String lemonName = "\n" + "\u001b[0m" + characterNames[2];
+  //initialize methods
+  public void speak()
+  {
+    System.out.print(lemonName);
+    System.out.print(speech);
+    System.out.println("\n");
+  }
+
+  public void speak(boolean alive)//this mainly helped us program the game, since we would never get confused with the plot of our game, because if we type System.out.println(character'sName.alive) it would print true or false, helping us remember if we already killed the character or not
+  {
+    this.alive=alive;//makes the character's alive value equal to true or false depending on parameters given to the .speak method
+  }
+}
+/**************************** END OF LEMONBLEMONCHARACTER.JAVA *****************/
+/****************************** START OF MATILDACHARACTER.JAVA ********/
+/*
+  David Cacorovski, Jeremy Thummel, Sohail Meghani
+  January 20th, 2022
+  matildaCharacter Child Class
+  This is the child class in which we make the character speak, and die (depending on which character) 
+*/
+//make a package to import classes from characterManager.java to Main.java
+package characterClassM;
+//import abstract class from characterManager.java
+import characterM.characterManager;
+
+public class matildaCharacter extends characterManager
+{
+  //initialize parameters and variables
+  boolean alive=true;
+  int index=0;
+  final String matildaName = "\n" + "\u001b[0m" + characterNames[3];
+  //initialize methods
+  public void speak()
+  {
+    System.out.print(matildaName);
+    System.out.print(speech);
+    System.out.println("\n");
+  }
+
+  public void speak(boolean alive)//this mainly helped us program the game, since we would never get confused with the plot of our game, because if we type System.out.println(character'sName.alive) it would print true or false, helping us remember if we already killed the character or not
+  {
+    this.alive=alive;//makes the character's alive value equal to true or false depending on parameters given to the .speak method
+  }
+}
+/************************** END OF MATILDACHARACTER.JAVA *************/
+/********** START OF PLAYERCHARACTER.JAVA ****************/
+/*
+  David Cacorovski, Jeremy Thummel, Sohail Meghani
+  January 20th, 2022
+  playerCharacter Child Class
+  This is the child class in which we make the character speak, and die (depending on which character)
+*/
+//make a package to import classes from characterManager.java to Main.java
+package characterClassP;
+//import abstract class from characterManager.java
+import characterM.characterManager;
+
+public class playerCharacter extends characterManager
+{
+  //initialize parameters and variables
+  public String yourName;
+  boolean alive=true;
+  int index=0;
+  //initialize methods
+  public void speak()
+  {
+    System.out.print("\n" + "\u001b[0m" + yourName + ": ");
+    System.out.print(speech);
+    System.out.println("\n");
+  }
+
+  public void speak(boolean alive)//this mainly helped us program the game, since we would never get confused with the plot of our game, because if we type System.out.println(character'sName.alive) it would print true or false, helping us remember if we already killed the character or not
+  {
+    this.alive=alive;//makes the character's alive value equal to true or false depending on parameters given to the .speak method
+  }
+}
+/******************* END OF PLAYERCHARACTER.JAVA **************/
+/************* START OF REDDRINKCHARACTER.JAVA **********************/
+/*
+  David Cacorovski, Jeremy Thummel, Sohail Meghani
+  January 20th, 2022
+  redDrinkCharacter Child Class
+  This is the child class in which we make the character speak, and die (depending on which character)
+*/
+//make a package to import classes from characterManager.java to Main.java
+package characterClassRD;
+//import abstract class from characterManager.java
+import characterM.characterManager;
+
+public class redDrinkCharacter extends characterManager
+{
+  //initialize parameters and variables
+  boolean alive=true;
+  int index=0;
+  final String redName = "\n" + "\u001b[0m" + characterNames[4];
+  //initialize methods
+  public void speak()
+  {
+    System.out.print(redName);
+    System.out.print(speech);
+    System.out.println("\n");
+  }
+
+  public void speak(boolean alive)//this mainly helped us program the game, since we would never get confused with the plot of our game, because if we type System.out.println(character'sName.alive) it would print true or false, helping us remember if we already killed the character or not
+  {
+    this.alive=alive;//makes the character's alive value equal to true or false depending on parameters given to the .speak method
+  }
+}
+/***************** END OF REDDRINKCHARACTER.JAVA **************/
+/****************** END OF TRIALEVENT.JAVA *******************/
+/*
+  David Cacorovski, Jeremy Thummel, Sohail Meghani
+  January 20th, 2022
+  trialEvent Class File
+  This is the file that will store the code for our trialEvent for the end of our game
+*/
+
+//imports and packages
+package trial;
+
+import java.util.*;
+
+public class trialEvent
+{
+  //************
+  //THE PLAYER MUST TYPE 0 AND PRESS ENTER WHEN A FALSE STATEMENT APPEARS  
+  //initialize protected variable for times
+  //the trial has an infinite amount of time, just don't accuse someone's statement who is telling the truth! }
+   
+  public String trialText1;
+  public String trialText2;
+  public String trialText3;
+  public String trialText4;
+  Scanner scan = new Scanner(System.in);
+
+  public int trial()
+  {    
+    System.out.println("\u001b[32m"+"\nA trial argument for the murder case is about to start.\nType and enter a 0 when a false statement appears,\nor enter anything if you're unsure and want to see the next option.");
+    scan.nextLine();
+
+    while(true)//the code will return which text the user disagrees with and will only move on to the next statement if the user does not input 0
+    {
+      
+      System.out.println("\u001b[0m"+"\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n"+trialText1+"\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n");
+
+      if(scan.nextLine().equals("0"))
+        return 1;
+
+      System.out.println("\u001b[0m"+"\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n"+trialText2+"\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n");
+
+      if(scan.nextLine().equals("0"))
+        return 2;
+
+      System.out.println("\u001b[0m"+"\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n"+trialText3+"\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n");
+
+      if(scan.nextLine().equals("0"))
+        return 3;
+
+      System.out.println("\u001b[0m"+"\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n"+trialText4+"\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n");
+      
+      if(scan.nextLine().equals("0"))
+        return 4;
+
+    }
+  }
+}
+/****************** END OF TRIALEVENT.JAVA *******/
+/************** END OF FILE *******/
