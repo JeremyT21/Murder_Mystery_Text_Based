@@ -1,4 +1,4 @@
-# Murder_Mystery_Text_Based
+# Mystery_Game_Text_Based
 This project utilizes different classes to portray a murder mystery experience through text.
 Project was worked on by: Myself (Jeremy Thummel), David Cacorovski, Sohail Meghani
 
